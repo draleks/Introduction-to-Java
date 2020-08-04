@@ -1,6 +1,7 @@
 package entity;
 /*Создать объект класса Текстовый файл, используя классы Файл, Директория. Методы: создать, переименовать,
 вывести на консоль содержимое, дополнить, удалить.*/
+
 import java.util.Objects;
 
 public class Directory {
@@ -33,6 +34,6 @@ public class Directory {
 
     @Override
     public String toString() {
-        return  path;
+        return path;
     }
 }

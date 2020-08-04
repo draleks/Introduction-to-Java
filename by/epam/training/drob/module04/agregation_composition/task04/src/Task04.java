@@ -1,3 +1,8 @@
+import entity.Account;
+import entity.Client;
+import logic.BankLogic;
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 /* Счета. Клиент может иметь несколько счетов в банке. Учитывать возможность блокировки/разблокировки
 счета. Реализовать поиск и сортировку счетов. Вычисление общей суммы по счетам. Вычисление суммы по
@@ -12,9 +17,10 @@ public class Task04 {
         listOfAccounts.add(new Account(14,-130));
 
         Client client = new Client("Jack",listOfAccounts);
-        Administrator administrator = new Administrator();
+        BankLogic administrator = new BankLogic();
         administrator.amountAllAccounts(client);
         administrator.amountNegativeAccounts(client);
         administrator.amountPositiveAccounts(client);
     }
+    
 }

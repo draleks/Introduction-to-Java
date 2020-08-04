@@ -12,7 +12,7 @@ public class Main {
         System.out.println("-----------------------------");
         view.viewTreasure(caveLogic.searchExpensiveTreasure(cave));
         System.out.println("-----------------------------");
-        view.viewAllTreasure(caveLogic.buySomeTreasure(1200,cave));
+        view.viewAllTreasure(caveLogic.buySomeTreasure(1200, cave));
 
     }
 }

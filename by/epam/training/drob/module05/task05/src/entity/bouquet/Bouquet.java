@@ -15,20 +15,25 @@ public class Bouquet {
         this.typeOfWrap = typeOfWrap;
         this.price = setPrice();
     }
-    public double setPrice(){
-        double price=0;
-        for (Flower flower:this.listOfFlower) {
-            price+=flower.getPrice();
+
+    public double setPrice() {
+        double price = 0;
+        for (Flower flower : this.listOfFlower) {
+            price += flower.getPrice();
         }
-        price+=this.typeOfWrap.getPrice();
+        price += this.typeOfWrap.getPrice();
         return price;
+    }
+
+    public void setTypeOfWrap(Wrap typeOfWrap) {
+        this.typeOfWrap = typeOfWrap;
     }
 
     @Override
     public String toString() {
-        return "Bouquet" +"\n"+
-                "listOfFlower  =  " + listOfFlower +"\n"+
-                "typeOfWrap  =  " + typeOfWrap +"\n"+
+        return "Bouquet" + "\n" +
+                "listOfFlower  =  " + listOfFlower + "\n" +
+                "typeOfWrap  =  " + typeOfWrap + "\n" +
                 "total price  =  " + price;
     }
 }

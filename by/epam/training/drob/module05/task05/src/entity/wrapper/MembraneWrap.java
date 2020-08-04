@@ -1,12 +1,15 @@
 package entity.wrapper;
 
 public class MembraneWrap extends Wrap{
-    public MembraneWrap() {
-        super(TypeWrap.MEMBRANE.type, "Yellow", 3);
+    private int density;
+
+    public MembraneWrap(String type, String color, int price, int density) {
+        super(TypeWrap.MEMBRANE.type, color, price);
+        this.density = density;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString()+"density = "+density;
     }
 }

@@ -1,11 +1,13 @@
 package entity;
 /*Создать объект класса Текстовый файл, используя классы Файл, Директория. Методы: создать, переименовать,
 вывести на консоль содержимое, дополнить, удалить.*/
+
 import java.util.Objects;
 
-public class TextFile extends File{
+public class TextFile extends File {
     private String content;
-    public TextFile(String name, Directory directory,String content) {
+
+    public TextFile(String name, Directory directory, String content) {
         super(name, directory);
         this.content = content;
     }
@@ -34,7 +36,7 @@ public class TextFile extends File{
 
     @Override
     public String toString() {
-        return "Directory: "+this.getDirectory()+" \n     "+ this.getName()+"\n"+
-                content ;
+        return "Directory: " + this.getDirectory() + " \n     " + this.getName() + "\n" +
+                content;
     }
 }

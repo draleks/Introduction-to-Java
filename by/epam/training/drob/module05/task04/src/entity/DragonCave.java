@@ -6,7 +6,7 @@ public class DragonCave {
     ArrayList<Treasure> listOfTreasure;
 
     public DragonCave() {
-       listOfTreasure = new ArrayList<>();
+        listOfTreasure = new ArrayList<>();
     }
 
     public ArrayList<Treasure> getListOfTreasure() {

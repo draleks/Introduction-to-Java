@@ -34,7 +34,7 @@ public enum Treasure {
 
     @Override
     public String toString() {
-        return this.name() +"    " + description + " cost     =   " + cost ;
+        return this.name() + "    " + description + " cost     =   " + cost;
     }
 
     public String getDescription() {

@@ -22,7 +22,8 @@ public class Payment {
         public void setProducts(ArrayList<Product> products) {
             this.products = products;
         }
-         private void addProduct(Product product) {
+
+        private void addProduct(Product product) {
             this.products.add(product);
         }
 
